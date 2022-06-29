@@ -1,0 +1,197 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Nunito', sans-serif;
+}
+.flex {
+    display: flex;
+}
+.flex-1 {
+    flex: 1;
+}
+.bg-dark {
+    background-color:rgba(5,20,45,1);
+}
+.bg-dark-blue {
+    background-color:rgba(15,45,90,1);
+}
+.bg-white {
+    background-color:rgba(255,255,255,1);
+}
+.border-1 {
+    border-width: 0.25rem;
+    border-style: solid;
+}
+.border-2 {
+    border-width: 0.5rem;
+    border-style: solid;
+}
+.border-gray {
+    border-color:rgba(80,85,90,1);
+}
+.border-silver {
+    border-color:rgba(110,120,130,.75);
+}
+.border-light-silver {
+    border-color:rgba(192,192,192,.75);
+}
+.border-green {
+    border-color: #17B169;
+}
+.border-round {
+    border-radius: .5rem
+}
+.shadow {
+    box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)
+}
+
+.ml-1 {
+    margin-left: .25rem
+}
+.ml-2 {
+    margin-left: .5rem
+}
+.mt-2 {
+    margin-top: .5rem
+}
+.mt-4 {
+    margin-top: 1rem
+}
+.ml-4 {
+    margin-left: 1rem
+}
+.mt-8 {
+    margin-top: 2rem
+}
+.mt-12 {
+    margin-top: 3rem
+}
+.ml-12 {
+    margin-left: 3rem
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto
+}
+.p-1 {
+    padding: .25rem
+}
+.p-2 {
+    padding: .5rem
+}
+.p-3 {
+    padding: .75rem
+}
+.p-6 {
+    padding: 1.5rem
+}
+.px-3 {
+    padding-left :.75rem;
+    padding-right: .75rem
+}
+.px-6 {
+    padding-left :1.5rem;
+    padding-right: 1.5rem
+}
+.pt-8 {
+    padding-top: 2rem
+}
+.pl-8 {
+    padding-left: 2rem
+}
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem
+}
+.items-center {
+    align-items: center
+}
+.justify-center {
+    justify-content: center
+}
+
+.text-sm {
+    font-size:.875rem
+}
+.text-lg {
+    font-size:1.25rem;
+    font-weight: 500;
+}
+.text-center {
+    text-align: center
+}
+.text-white {
+    color:#edf2f7;
+}
+.text-light-gray {
+    color:#d5d8dc;
+}
+.text-gray {
+    color:#a0aec0;
+}
+.text-alt {
+    font-family: Tahoma, sans-serif;
+}
+
+.h-5 {
+    height:1.25rem
+}
+.h-8 {
+    height:2rem
+}
+.h-12 {
+    height:3rem
+}
+.h-16 {
+    height:4rem
+}
+.w-5 {
+    width: 1.25rem
+}
+.w-8 {
+    width: 2rem
+}
+.w-auto {
+    width: auto
+}
+.max-w-6xl {
+    max-width: 72rem
+}
+
+input#guess {
+    box-sizing: border-box;
+    transition: 0.5s;
+    outline: none;
+}
+input#guess:focus {
+    border-color:rgba(110,120,130,1);
+}
+button {
+    cursor: pointer;
+}
+
+.msg {
+    position: fixed;
+    left: 50%;
+    top: 15%;
+    min-width: 200px;
+    max-width: 450px;
+    max-height: 4rem;
+    transform: translate(-50%,-50%);
+}
+.ctry {
+    width: 288px;
+    height: 288px;
+ }
+
+/* TODO: https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile */
+@media (min-width:961px) {
+ 
+}
+@media (min-width:2000px) {
+    .ctry {
+        width: 320px;
+        height: 320px;
+     }
+}
+
