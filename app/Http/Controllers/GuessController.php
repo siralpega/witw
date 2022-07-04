@@ -35,7 +35,6 @@ class GuessController extends Controller
 
         $guess = $request->input('guess');
         $user = User::where('uuid', $request->cookie('uuid'))->first();
-        Log::debug('User guessing: ' . ($user != null ? $user->id : 'null'));
         if($user == null)
         {
             $uuid = $request->has('uuid') ? $request->get('uuid') : HasUUIDCookie::createUser($request->ip());
@@ -79,7 +78,6 @@ class GuessController extends Controller
         //Get direction
         $direction = $this->getDirection($guessCountry->location['lon'], $guessCountry->location['lat'], $today->country->location['lon'], $today->country->location['lat'])->name;
 
-        Log::debug('Guess was ' . $guessCountry->name . ' with a distance from answer of ' . $distance . ' and a direction of ' . $direction);
         $this->saveAttempt($user, $guessCountry, $distance, $direction);
         $guesses = $this->getUserAttempts($user->uuid);
         $html = view('components.guesses', ['guesses' => $guesses])->render();

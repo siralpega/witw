@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class success extends Component
+class message extends Component
 {
 
     /**
@@ -24,6 +24,6 @@ class success extends Component
      */
     public function render()
     {
-        return view('components.success');
+        return view('components.message');
     }
 }

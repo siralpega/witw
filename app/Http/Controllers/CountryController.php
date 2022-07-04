@@ -22,7 +22,6 @@ class CountryController extends Controller
             abort(500, 'No country has been set for today!');
         }
         $countries = Country::all('name');
-        Log::debug($country->country->name . ' (' . $country->country->location['lat'] . ',' . $country->country->location['lon'] . ')');
         $guesses = GuessController::getUserAttempts($request->cookie('uuid'));
         return view('index', ['paths' => $country->country->paths, 'countries' => $countries, 'guesses' => $guesses]);
     }
